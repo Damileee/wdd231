@@ -1,0 +1,201 @@
+:root {
+  --primary: #1E3A5F;
+  --secondary: #4A90E2;
+  --accent1: #F2A20C;
+  --accent2: #E94F37;
+  --light: #f9f9f9;
+  --dark: #222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+header span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#menuButton {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+}
+
+.home-content {
+  display: block;
+}
+
+main {
+  padding: 0 1rem;
+}
+
+nav {
+  background-color: var(--dark);
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  border-bottom: 1px solid #444;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+}
+
+nav a:hover {
+  background-color: var(--secondary);
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.section-title {
+  background-color: var(--dark);
+  color: white;
+  padding: 0.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.about-me,
+.student-photo {
+  background-color: #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  max-height: 816px;
+  height: 100%;
+}
+
+.student-photo img {
+  max-width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.course-buttons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.course-buttons button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  cursor: pointer;
+}
+
+.course-buttons button:hover {
+  background-color: var(--secondary);
+}
+
+.course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.course-item {
+  background-color: #eee;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+#totalCredits {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.completed {
+  background-color: var(--accent1);
+}
+
+footer {
+  background-color: var(--light);
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+footer a {
+  margin: 0 0.5rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+  main {
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+  
+  header {
+    justify-content: center;
+  }
+
+  .home-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  #menuButton {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav li {
+    border-bottom: none;
+  }
+
+  .hidden {
+    display: block !important;
+  }
+}
