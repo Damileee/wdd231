@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Course Home Page">
+  <meta name="author" content="Damilare Olasoju">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Home Page</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="js/navigation.js" defer></script>
+  <script src="js/date.js" defer></script>
+  <script src="js/courses.js" defer></script>
+</head>
+<body>
+
+<header>
+  <!-- <img src="images/logo.svg" alt="Site Logo" style="width:40px;"> -->
+  <span>Course Home Page</span>
+  <button id="menuButton">☰</button>
+</header>
+
+<nav id="mainNav" class="hidden">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Chamber Project</a></li>
+    <li><a href="#">Final Project</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h1>Home</h1>
+    <section class="home-content">
+        <section>
+          <div class="section-title">About Me</div>
+          <div class="about-me">
+            <p>I’m a Software Engineer based in Nigeria, passionate about crafting exceptional websites and applications. I focus on creating seamless, accessible digital experiences for users everywhere.</p>
+          </div>
+        </section>
+      
+        <section>
+          <div class="section-title">Student Photo</div>
+          <div class="student-photo">
+            <img src="images/profile.jpg" alt="Student Photo">
+          </div>
+        </section>
+    </section>
+</main>
+
+<section>
+  <div class="section-title">Web Certificate Courses</div>
+  <div class="course-buttons">
+    <button onclick="showAll()">All</button>
+    <button onclick="showCSE()">CSE</button>
+    <button onclick="showWDD()">WDD</button>
+  </div>
+  <div id="courseList" class="course-list"></div>
+  <p id="totalCredits"></p>
+</section>
+
+<footer>
+  <p>
+    <a href="#">LinkedIn</a>
+    <a href="#">GitHub</a>
+    <a href="#">Other</a>
+  </p>
+  <p>&copy; <span id="year"></span> • Damilare Olasoju • Lagos, Nigeria</p>
+  <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>
